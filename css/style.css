@@ -11,7 +11,7 @@ h1{
 }
 
 header{
-    background-image: url('../images/shutterstock_348320018@2x.png');
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url('../images/shutterstock_348320018@2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -68,11 +68,11 @@ header #header-content{
 
 #searchbars{
     display: inline-flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .container{
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -92,6 +92,7 @@ header #header-content{
 .searchBox{
     border: 0;
     flex: 1;
+    flex-shrink: 2;
     width: 400px;
     font-size: 20px;
     padding: 0 10px;
@@ -143,8 +144,37 @@ h3{
 .card-content p{
     font-size: 1rem;
 }
-
 .card:hover{
     transform: scale(1.05);
     transition: transform .3s ease-out;
 }
+#heading-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-rows: repeat(2,150px);
+    }  
+}
+
+
+@media screen and (max-width: 576px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-rows: repeat(2,150px);
+    }
+
+    
+}
+
