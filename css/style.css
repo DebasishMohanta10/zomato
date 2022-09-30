@@ -15,7 +15,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 70vh;
+    height: 80vh;
     color: white;
 }
 
@@ -44,7 +44,7 @@ nav ul li a{
 }
 
 header #header-content{
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
