@@ -143,3 +143,7 @@ h3{
 .card-content p{
     font-size: 1rem;
 }
+
+.card:hover{
+    transform: scale(1.05);
+}
