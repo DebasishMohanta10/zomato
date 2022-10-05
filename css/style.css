@@ -82,6 +82,7 @@ header #header-content{
     width: 300px;
     padding: 0 20px;
     font-size: 20px;
+    outline:0;
 }
 .container img{
     background-color: white;
@@ -96,6 +97,7 @@ header #header-content{
     width: 400px;
     font-size: 20px;
     padding: 0 10px;
+    outline:0;
 }
 
 main{
